@@ -162,27 +162,21 @@ addEventListener("keydown",(event)=>{
     }
 })
 
-function changeDirection(direction) {
-  switch(direction) {
-    case 'UP':
-      dx = 0;
-      dy = -10;
-      break;
+function changeDirection(newDirection) {
 
-    case 'DOWN':
-      dx = 0;
-      dy = 10;
-      break;
+    if(newDirection === "UP"){
+        direction = "up"
+    }
 
-    case 'LEFT':
-      dx = -10;
-      dy = 0;
-      break;
+    else if(newDirection === "DOWN"){
+        direction = "down"
+    }
 
-    case 'RIGHT':
-      dx = 10;
-      dy = 0;
-      break;
-  }
+    else if(newDirection === "LEFT"){
+        direction = "left"
+    }
+
+    else if(newDirection === "RIGHT"){
+        direction = "right"
+    }
 }
-changeDirection();
