@@ -151,4 +151,10 @@ section .infos{
 
     }
 }
+@media (max-width: 768px){
 
+    .board{
+        width: 90vw;
+        height: 60vh;
+    }
+}
