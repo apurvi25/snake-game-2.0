@@ -185,3 +185,4 @@ function changeDirection(direction) {
       break;
   }
 }
+changeDirection();
